@@ -4,8 +4,8 @@ if defined?(Merb::Plugins)
 
   $:.unshift File.dirname(__FILE__)
 
-  load_dependency 'merb-slices'
-  load_dependency 'merb-assets'
+  dependency 'merb-slices'
+  dependency 'merb-assets'
   require 'md5'
   
   Merb::Plugins.add_rakefiles "merb_screw_unit/merbtasks", "merb_screw_unit/slicetasks"
